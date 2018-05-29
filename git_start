@@ -8,6 +8,8 @@ git branch branch_name; create branch
 git branch -d branch_name; delete branch
 git merge branch_name; history of few branches togather > working_dir
   from branch_name to act_branch
+  --abort; clean up wor_dir + stage
+  --squash; new commit represents all changes on that branch_name
 0. working_tree == local_repo_files
 1. git add / git commit -a; >add< to staging area (before commit)
   what to commit
