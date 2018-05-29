@@ -1,13 +1,14 @@
 git branch; show branches; for new_future / bug_fixing
   master == representation what is on production
 git branch branch_name; create branch
-  every branch is snapshot? repozytory with own files
+  every branch is snapshot? repository with own files
 git branch -d branch_name; delete branch
 0. working_tree == local_repo_files
 1. git add / git commit -a; >add< to staging area (before commit)
+  what to commit
 2. git commit -m "message"
 3. git push
-git status; what's going on
+git status; what's going on; what to commit; what's added
 git checkout branch_name; choose branch
 git checkout -b branch_name; create >branch< and chekout in one step
 git log [file_name]; commits_info
