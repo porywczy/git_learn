@@ -9,7 +9,7 @@ git branch -d branch_name; delete branch
 git status; what's going on
 git checkout branch_name; choose branch
 git checkout -b branch_name; create >branch< and chekout in one step
-git log; commits_info
+git log [file_name]; commits_info
 git checkout -- file_name; through away changes
 touch .gitignore
   git add .gitignore
@@ -19,3 +19,5 @@ touch .gitignore
     # comment
   git ls-files --others --ignored --exclude-standard; ignored list
 git mv old_path_to_file new_path_to_file
+  mv; from system: delete + add file in git sense
+  git add -A .; fixes this; . - start here and recursively
