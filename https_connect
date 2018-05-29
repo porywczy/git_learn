@@ -1,0 +1,2 @@
+save your password in memory for some time
+  git config --global credential.helper cache
