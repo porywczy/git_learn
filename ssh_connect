@@ -1,0 +1,17 @@
+to authenticate
+  SSH keys
+~/.ssh/id_rsa.pub
+add to ssh-agent 
+  to manage your keys
+    eval "$(ssh-agent -s)"
+Add SSH private key to the ssh-agent    
+  ssh-add ~/.ssh/id_rsa
+add SSH key to your GitHub account
+  Copy the SSH key to your clipboard
+    xclip -sel clip < ~/.ssh/id_rsa.pub
+profile > settings > SSH and GPG keys >  New SSH key
+  Title: my_PC_key
+    confirm GitHub password
+test connectiion
+  ssh -T git@github.com
+  
