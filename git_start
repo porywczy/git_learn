@@ -1,19 +1,21 @@
-    git branch; show branches; for new_future / bug_fixing
-      master == representation what is on production
-    git branch branch_name; create branch
-      every branch is snapshot? repozytory with own files
-    git branch -d branch_name; delete branch
-    1. git add / git commit -a; >add< to commit
-    2. git commit -m "message"
-    3. git push
-    git status; what's going on
-    git checkout branch_name; choose branch
-    git checkout -b branch_name; create >branch< and chekout in one step
-    git log; commits_info
-    git checkout -- file_name; through away changes
-    touch .gitignore
-      git add .gitignore
-      vim .gitignore
-        wildcards
-        ! required?
-        # comment
+git branch; show branches; for new_future / bug_fixing
+  master == representation what is on production
+git branch branch_name; create branch
+  every branch is snapshot? repozytory with own files
+git branch -d branch_name; delete branch
+1. git add / git commit -a; >add< to commit
+2. git commit -m "message"
+3. git push
+git status; what's going on
+git checkout branch_name; choose branch
+git checkout -b branch_name; create >branch< and chekout in one step
+git log; commits_info
+git checkout -- file_name; through away changes
+touch .gitignore
+  git add .gitignore
+  vim .gitignore
+    wildcards
+    ! required?
+    # comment
+  git ls-files --others --ignored --exclude-standard; ignored list
+git mv old_path_to_file new_path_to_file
