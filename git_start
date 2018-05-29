@@ -3,7 +3,8 @@ git branch; show branches; for new_future / bug_fixing
 git branch branch_name; create branch
   every branch is snapshot? repozytory with own files
 git branch -d branch_name; delete branch
-1. git add / git commit -a; >add< to commit
+0. working_tree == local_repo_files
+1. git add / git commit -a; >add< to staging area (before commit)
 2. git commit -m "message"
 3. git push
 git status; what's going on
@@ -28,3 +29,8 @@ git mv old_path_to_file new_path_to_file
 git rm file_name; also remove from fs
   alt: delete with system tool; next: git add -u . (stages as deleted)
 git rm --cached file_name; only not track file anymore
+git diff
+  --staged; diff between staging vs last commit
+  HEAD; diff between working_tree and HEAD_commit
+  --color-words
+  --word-diff
