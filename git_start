@@ -1,8 +1,12 @@
+git init; in local project directory; changes dir to repo
+git init dir_name; init repo
+on github username == namespace
 git branch; show branches; for new_future / bug_fixing
   master == representation what is on production
 git branch branch_name; create branch
   every branch is snapshot? repository with own files
 git branch -d branch_name; delete branch
+git merge; history of few branches togather > working_dir
 0. working_tree == local_repo_files
 1. git add / git commit -a; >add< to staging area (before commit)
   what to commit
@@ -17,7 +21,7 @@ git log [file_name]; commits_info
   --patch ; diff between each commit
   --graph
 git checkout -- file_name; through away changes
-touch .gitignore
+touch .gitignore; list files not under git control
   git add .gitignore
   vim .gitignore
     wildcards
@@ -35,4 +39,14 @@ git diff
   HEAD; diff between working_tree and HEAD_commit
   --color-words
   --word-diff
+git config --global
+  user.name
+  user.email
+  core.autocrlf
+  color.ui
+c: global are overwritten by local
+
+
 sth from github
+
+connect local-repo with github_repo
