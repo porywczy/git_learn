@@ -10,6 +10,10 @@ git status; what's going on
 git checkout branch_name; choose branch
 git checkout -b branch_name; create >branch< and chekout in one step
 git log [file_name]; commits_info
+  --oneline; short_info; start of uuid
+  --stat; files in commit
+  --patch ; diff between each commit
+  --graph
 git checkout -- file_name; through away changes
 touch .gitignore
   git add .gitignore
@@ -21,3 +25,6 @@ touch .gitignore
 git mv old_path_to_file new_path_to_file
   mv; from system: delete + add file in git sense
   git add -A .; fixes this; . - start here and recursively
+git rm file_name; also remove from fs
+  alt: delete with system tool; next: git add -u . (stages as deleted)
+git rm --cached file_name; only not track file anymore
