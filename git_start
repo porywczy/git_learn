@@ -50,7 +50,9 @@ git config --global
   color.ui
 c: global are overwritten by local
 
-
-sth from github
-
+work from 
+  external-client
+    or
+  github
+  
 connect local-repo with github_repo
