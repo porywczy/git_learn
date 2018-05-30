@@ -23,6 +23,7 @@ git log [file_name]; commits_info
   --stat; files in commit
   --patch ; diff between each commit
   --graph
+  --oneline --decorate --graph --all -10; nice history preview
 git checkout -- file_name; through away changes
 touch .gitignore; list files not under git control
   git add .gitignore
